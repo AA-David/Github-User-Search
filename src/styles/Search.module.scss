@@ -11,12 +11,16 @@ form {
     border-radius: 10px;
 
     button {
-        width: 5em;
-        height: 3.5em;
+        width: 6em;
+        height: 6em;
 
         background-color: transparent;
         border: none;
         border-radius: 10px 0 0 10px;
+
+        img {
+            width: 45%;
+        }
     }
 
     button:hover {
@@ -36,6 +40,14 @@ form {
         font-size: 1.2rem;
         color: #CDD5E0;
     }
+
+    input {
+        outline: none;
+    }    
+}
+
+form:focus-within {
+    outline: auto;
 }
 
 @media screen and (min-width: 768px) {

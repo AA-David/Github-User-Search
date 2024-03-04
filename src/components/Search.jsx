@@ -107,7 +107,7 @@ export default function Search({ inputValue, setInputValue, username, setUsernam
                     <img src={searchIcon} alt='Search icon' />
                 </button>
 
-                <input type='search' placeholder='Search' onChange={handleChange} value={inputValue}></input>
+                <input type='search' placeholder='Username' onChange={handleChange} value={inputValue}></input>
             </form>    
 
             <SearchSuggestion bio={bio}
