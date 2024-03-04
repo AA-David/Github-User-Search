@@ -1,0 +1,55 @@
+.suggestion {
+    position: absolute;
+    inset: 0;
+    top: 7em;
+
+    width: 80%;
+    height: fit-content;
+
+    margin: 0 auto;
+    padding: 1rem;
+
+    align-items: center;
+    gap: 1rem;
+
+    line-height: 1.5rem;
+    color: #CDD5E0;
+
+    background-color: #111629;
+    border-radius: 10px;
+}
+
+.suggestion:hover {
+    cursor: pointer;
+    background-color: #1a253a;
+}
+
+.pfp {  
+    width: 20%;
+    border-radius: 10px;
+}
+
+.subtitle {
+    color: #4A5567;
+}
+
+@media screen and (min-width: 768px) {
+    .suggestion {
+        top: 8em;
+        line-height: 2rem;
+    }
+    
+    .pfp {
+        width: 15%;
+    }
+
+    .username {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .suggestion {
+        width: 45em;
+    }
+}

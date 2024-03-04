@@ -1,0 +1,16 @@
+.viewAllReposButtonContainer {
+    margin: 3rem 0 4.5rem 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.viewAllReposButton {
+    cursor: pointer;
+
+    font-weight: 700;
+    color: #4A5567;
+
+    background: none;
+    border: none;
+}

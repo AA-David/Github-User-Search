@@ -1,0 +1,79 @@
+.repoGridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.repo {
+    transition: 0.1s;
+    cursor: pointer;
+
+    padding: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.7rem;
+
+    background-image: linear-gradient(to right, #111528, #1B1A44);
+    background-size: 500%;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.repo:hover {
+    transition: 0.1s;
+    box-shadow: 0 0 5px 2px #211c4c, 0 0 10px 2px #4e206d, 0 0 15px 2px #6b2383;
+    animation: repo-hover 0.2s forwards;
+}
+
+@keyframes repo-hover {
+    0% {
+        background-position: center;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.repoName {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #CDD5E0;
+}
+
+.bottomLine, .repoDescription, .repoLicense, .repoForks, .repoStars, .repoLastUpdate {
+    color: #97A3B6;
+}
+
+.bottomLine {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.repoLicense, .repoForks, .repoStars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.repoLastUpdate {
+    margin-left: 0.3rem;
+    font-size: 0.75rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .repoGridContainer {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        align-items: start;
+        gap: 1.5rem;
+        row-gap: 2rem;
+    }
+
+    .repo {
+        gap: 1rem;
+    }
+}
