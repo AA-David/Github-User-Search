@@ -11,7 +11,6 @@ export default function Search({ inputValue, setInputValue, username, setUsernam
     const accessToken = import.meta.env.VITE_GITHUB_ACCESS_TOKEN;
 
     function fetchData() {
-        console.log('Data Fetched')
         fetch(`https://api.github.com/users/${inputValue}`, {
             headers: {
                 Authorization: `${accessToken}`
@@ -30,7 +29,6 @@ export default function Search({ inputValue, setInputValue, username, setUsernam
     }
 
     function setUser(data) {
-        console.log('User Set')
         setSearchable(true);
 
         setUsername(data.name);
@@ -50,7 +48,6 @@ export default function Search({ inputValue, setInputValue, username, setUsernam
     }
 
     function resetStates() {
-        console.log('States Resetted')
         setUsername('');
         setProfilePicture('');
         setBio('');
@@ -91,8 +88,6 @@ export default function Search({ inputValue, setInputValue, username, setUsernam
     function handleSubmit(e) {
         e.preventDefault();
 
-        console.log('Form submitted');
-        
         if (searchable) {
             setUserSearched(true);
         } else {

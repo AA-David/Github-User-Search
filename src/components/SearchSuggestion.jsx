@@ -2,7 +2,6 @@ import style from '../styles/SearchSuggestion.module.scss';
 
 export default function SearchSuggestion({ username, profilePicture, bio, userSearched, setUserSearched, suggestionNotVisible }) {
     function handleClick() {
-        console.log('User Searched')
         setUserSearched(true)
     }
 
