@@ -74,7 +74,7 @@ export default function Search({ inputValue, setInputValue, username, setUsernam
     }, [inputValue, userSearched]); 
 
     function handleBlur(e) {
-        if (e.relatedTarget === null) {
+        if (e.relatedTarget === null && !userSearched) {
             resetStates();
         }  
     }
