@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import style from '../styles/viewAllReposButton.module.scss';
+import style from '../styles/ViewAllReposButton.module.scss';
 
 export default function ViewAllReposButton({ userSearched, setReposShown, repos }) {
     const [viewRepos, setViewRepos] = useState(true);
