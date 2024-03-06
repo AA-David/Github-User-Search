@@ -1,4 +1,4 @@
-# This is a solution to the DevChallanges "[GitHub Profile](https://devchallenges.io/challenge/github-profile)" mid-level challange.
+# This is a solution to the DevChallanges "GitHub Profile" mid-level challange.
 
 ![DevChallanges thumbnail](DevChallangesThumbnail.png)
 
