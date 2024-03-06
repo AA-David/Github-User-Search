@@ -6,7 +6,7 @@
 ![Screenshot](Screenshot.png)
 
 ## Live Project link
-https://github-user-search-7v2vozw0q-aa-david.vercel.app/
+https://aadavid-github-user-search.vercel.app/
 
 ## Challange link
 https://devchallenges.io/challenge/github-profile
