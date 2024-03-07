@@ -23,7 +23,7 @@ export default function Repos({ repos, userSearched }) {
         // Convert difference to days (1000ms -> 1s -> 1hr -> 1day)
         const daysDifference = difference / (1000 * 60 * 60 * 24);
 
-        if (daysDifference < 1) {
+        if (daysDifference <= 1) {
             lastUpdateDate = 'less than 24 hours ago';
         } else {
             lastUpdateDate = Math.floor(daysDifference) + ' days ago';
